@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <title>Restaurant</title>
+    <link rel="icon" href="images/rest.png" type="image/png">
+  </head>
+
+  <nav class="z-50 bg-white fixed w-full top-0 shadow-xl">
+    <div class="flex justify-between ml-10 mr-10">
+      <a href="#home">
+        <div class="flex flex-row cursor-pointer hover:opacity-70 duration-300">
+        <div class="flex items-center">
+          <img src="images/rest.png " class="w-20 " />
+          <div class="text-2xl font-bold text-orange-500">Emberlane</div>
+        </div>
+      </div>
+      </a>
+
+      <ul class="gap-10 items-center hidden md:flex">
+        <a href="#home">
+        <li
+          class="cursor-pointer hover:text-orange-500 text-lg transition duration-400 ease-out font-semibold"
+        >
+          Home
+        </li>
+        </a>
+        <a href="#menu">
+        <li
+          class="cursor-pointer hover:text-orange-500 text-lg transition duration-400 ease-out font-semibold"
+        >
+          Menu
+        </li>
+        </a>
+        <a href="#about">
+        <li
+          class="cursor-pointer hover:text-orange-500 text-lg transition duration-400 ease-out font-semibold"
+        >
+          About
+        </li>
+        </a>
+        <a href="#footer">
+        <li
+          class="cursor-pointer hover:text-orange-500 text-lg transition duration-400 ease-out font-semibold"
+        >
+          Contact
+        </li>
+        </a>
+      </ul>
+      <div class="gap-5 flex">
+        <div class="items-center gap-2 hidden lg:flex">
+          <i class="fa-solid fa-phone"></i>
+          (123) 456-7890
+        </div>
+
+        <div class="flex items-center mr-5 ">
+          <button
+            class="bg-orange-500 text-white rounded-md hover:bg-orange-200 cursor-pointer p-2 max-[413px]:hidden hover:text-black duration-700"
+          >
+            Reserve Table
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home"
+    class="bg-[url('./images/bgphoto.jpeg')] bg-cover bg-center min-h-screen items-center right-0 mr-0"
+  >
+    <div
+      class="text-lg pt-52 items-center flex flex-col justify-center gap-7 align-middle text-center"
+    >
+      <h1 class="text-xl text-yellow-400 ">Experience Culinary Excellence</h1>
+      <h2 class="m-5 text-white text-center">
+        Indulge in an unforgettable dining experience where every dish tells a
+        story of passion, tradition, and innovation. From farm to table, we
+        bring you the finest flavors.
+      </h2>
+    </div>
+
+    <div class=" flex flex-col md:flex-row gap-5 align-middle justify-center mx-14 mt-10">
+      <button class="border border-orange-500 bg-orange-500 text-white text-lg px-3 py-1 rounded-md hover:bg-orange-300 hover:text-black duration-700">
+        View Menu
+      </button>
+      <button class="border text-white text-lg px-3 py-1 rounded-md inset-0 bg-amber backdrop-blur-md hover:bg-slate-300 hover:text-black duration-700">
+        Reserve Table
+      </button>
+    </div>
+  </section>
+
+  <section>
+    <div
+      class="flex text-lg py-14 px-10 align-middle justify-center flex-col text-center items-center gap-5"
+    >
+      <h2 class="text-orange-500 flex flex-col gap-5">
+        Discover Our Menu <strong class="text-black">Featured Dishes</strong>
+      </h2>
+      <p class="flex">
+        Each dish is crafted with the finest ingredients and years of culinary
+        expertise
+      </p>
+    </div>
+
+
+<div class="flex flex-wrap gap-6 justify-center mb-10" id="menu">
+    <div class="flex flex-wrap justify-center gap-10 ">
+        <div class=" bg-white gap-10 flex-1 flex-col rounded-lg shadow-md  min-w-[250px] max-w-[300px] duration-200 ease-in  hover:scale-105 transition-transform hover:shadow-xl cursor-pointer">
+            <div class="flex flex-col">
+                <img src="images/pht1.jpeg" class=" rounded-t-2xl h-96">
+            </div>
+            <div class="px-5 pb-5 space-y-5 pt-12">
+                <div class="text-xl">
+                <p class=" flex flex-row justify-between text-orange-500"><strong class="text-black">Grilled Prime Steak</strong>$45</p>
+            </div>
+            <div class="py-4 text-slate-600">
+                Premium beef with roasted vegetables and signature sauce
+            </div>
+            </div>
+            
+        </div>
+
+        <div class=" duration-200 ease-in  hover:scale-105 transition-transform hover:shadow-xl cursor-pointer bg-white gap-10 flex-1 flex-col rounded-lg shadow-md  min-w-[250px] max-w-[300px]">
+            <div class="flex flex-col">
+                <img src="images/pht2.jpeg" class=" h-96 rounded-t-2xl ">
+            </div>
+            <div class="px-5 pb-5 space-y-5 pt-12">
+                <div class="text-xl">
+                <p class=" flex flex-row justify-between text-orange-500"><strong class="text-black">Artisan Pasta</strong>$32</p>
+            </div>
+            <div class="py-4 text-slate-600">
+                Handmade pasta with truffle cream and wild mushrooms
+            </div>
+            </div>
+            
+        </div>
+
+        <div class=" duration-200 ease-in  hover:scale-105 transition-transform hover:shadow-xl cursor-pointer bg-white gap-10 flex-1 flex-col rounded-lg shadow-md  min-w-[250px] max-w-[300px]">
+            <div class="flex flex-col">
+                <img src="images/pht3.jpeg" class="h-96 rounded-t-2xl ">
+            </div>
+            <div class="px-5 pb-5 space-y-5 pt-12">
+                <div class="text-xl">
+                <p class=" flex flex-row justify-between text-orange-500"><strong class="text-black">Ocean's Bounty</strong>$52</p>
+            </div>
+            <div class="py-4 text-slate-600">
+                Fresh seafood platter with seasonal catches
+            </div>
+            </div>
+            
+        </div>
+
+        <div class=" duration-200 ease-in  hover:scale-105 transition-transform hover:shadow-xl cursor-pointer bg-white gap-10 flex-1 flex-col rounded-lg shadow-md  min-w-[250px] max-w-[300px]">
+            <div class="flex flex-col">
+                <img src="images/pht4.jpeg" class="h-96 rounded-t-2xl ">
+            </div>
+            <div class="px-5 pb-5 space-y-5 pt-12">
+                <div class="text-xl">
+                <p class=" flex flex-row justify-between text-orange-500"><strong class="text-black">Chocolate Symphony</strong>$14</p>
+            </div>
+            <div class="py-4 text-slate-600">
+                Decadent chocolate cake with berry compote
+            </div>
+            </div>
+            
+        </div>
+
+        
+        
+    </div>
+      
+    
+
+    
+</div>
+    
+  </section>
+
+<section class="bg-slate-50 pt-5 " id="about ">
+    <div class="inline-flex flex-col m-10 md:flex-row align-middle justify-center items-center">
+        <div class="">
+            <div class="flex flex-col gap-5 m-5">
+            <h2 class="text-orange-500 text-lg">Our Story</h2>
+            <h3 class="font-semibold">A Passion for Perfect Flavors</h3>
+            <p class="text-slate-600">Since 2010, Savoria has been dedicated to bringing you an exceptional dining experience. Our award-winning chefs combine traditional techniques with modern innovation to create dishes that delight all your senses.</p>
+            <p class="text-slate-600">We source only the finest ingredients from local farms and trusted suppliers, ensuring every meal is fresh, sustainable, and unforgettable.</p>
+            </div>
+            <div class="flex flex-row justify-around my-16">
+                <div class="flex flex-col align-middle justify-center items-center">
+                    <div class="mb-2 w-fit text-yellow-600 bg-yellow-200 rounded-full items-center text-2xl text-center p-3 px-5">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        +15 Awards
+                    </div>
+                    <div class="text-slate-700">
+                        Excellence
+                    </div>
+                </div>
+
+                <div class="flex flex-col align-middle justify-center items-center">
+                    <div class="mb-2 w-fit text-yellow-600 bg-yellow-200 rounded-full items-center text-2xl text-center p-3 px-4">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <div>
+                        15 Years
+                    </div>
+                    <div class="text-slate-700">
+                        Experience
+                    </div>
+                </div>
+
+                <div class="flex flex-col align-middle justify-center items-center">
+                    <div class="mb-2 w-fit text-yellow-600 bg-yellow-200 rounded-full items-center text-2xl text-center p-3 px-3">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div>
+                        50K+
+                    </div>
+                    <div class="text-slate-700">
+                        Happy Guests
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="">
+            <img src="images/ph5.jpeg" class="rounded-xl max-h-[1000px] max-w-[350px]">
+        </div>
+
+
+    </div>
+</section>
+
+
+<footer id="footer" class="bg-slate-900">
+<div class="text-white  py-10  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 space-x-5 ">
+    
+    <div class="flex flex-col ">
+    <a href="#home">
+        <div class="flex flex-row cursor-pointer hover:opacity-70 duration-300">
+        <div class="flex items-center">
+          <img src="images/logo.png " class="w-20" />
+          <div class="text-2xl font-bold text-orange-500">Emberlane</div>
+        </div>
+      </div>
+    </a>
+
+    <p class="flex ml-5 mt-5 text-slate-400">Experience culinary excellence with every visit. Where passion meets flavor.</p>
+    
+    </div>
+    
+    <div class="flex flex-col gap-5 my-5 text-sm text-slate-400">
+        <h2 class="font-semibold text-xl text-white">Quick Links</h2>
+        <a href="#home"
+          class="cursor-pointer hover:text-orange-500 text-lg transition duration-400 ease-out font-semibold"
+        >
+          Home
+        </a>
+        <a href="#menu"
+          class="cursor-pointer hover:text-orange-500 text-lg transition duration-400 ease-out font-semibold"
+        >
+          Menu
+        </a>
+        <a href="#about"
+          class="cursor-pointer hover:text-orange-500 text-lg transition duration-400 ease-out font-semibold"
+        >
+          About
+        </a>
+        <a href="#footer"
+          class="cursor-pointer hover:text-orange-500 text-lg transition duration-400 ease-out font-semibold"
+        >
+          Contact
+        </li>
+        </a>
+    </div>
+
+
+    <div class="flex flex-col gap-5 my-5 cursor-default">
+        <div class="font-semibold text-xl">Opening Hours</div>
+        <div class="flex flex-row gap-5  cursor-default items-center text-sm">
+            <div class="">
+                <i class="fa-solid fa-clock-rotate-left text-orange-500"></i>
+            </div>
+            <div class="text-sm text-slate-400 ">Mon - Fri: 11:00 AM - 10:00 PM <br>
+            Sat - Sun: 10:00 AM - 11:00 PM
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-5 my-5">
+        <div class="cursor-default font-semibold text-xl">Contact Info</div>
+        <div class="flex flex-row gap-2  cursor-pointer">
+            <div>
+            <i class="fa-solid fa-location-dot text-orange-500"></i>
+            </div>
+            <div class="text-sm text-slate-400 hover:text-orange-500" >
+             123 Gourmet Street, Food District, NY 10001
+            </div>
+        </div>
+
+        <div class="flex flex-row gap-2 cursor-pointer">
+            <div>
+            <i class="fa-solid fa-phone-volume text-orange-500"></i>
+            </div>
+            <div class="text-sm text-slate-400 hover:text-orange-500">
+            (123) 456-7890
+            </div>
+        </div>
+
+        <div class="flex flex-row gap-2  cursor-pointer">
+            <div >
+             <i class="fa-solid fa-envelope text-orange-500"></i>
+            </div>
+            <div class="text-sm text-slate-400 hover:text-orange-500">
+            info@savoria.com
+            </div>
+        </div>
+
+    </div>
+
+    
+
+
+</div>
+
+<div class="h-[1px] w-full bg-white opacity-15 mt-5 "></div>
+    <div class="text-lg text-slate-400 mt-14 flex pb-14  justify-center align-middle items-center">
+        © 2025 Savoria Restaurant. All rights reserved.
+    </div>
+
+
+</footer>
+
+
+
+</html>
